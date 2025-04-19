@@ -22,6 +22,7 @@ prepare_www: build
 
 prepare_server:
 	cp -r $(SERVER_DIR)/requirements.txt $(PACKAGE_DIR)/
+	cp -r $(SERVER_DIR)/requirements-rpi.txt $(PACKAGE_DIR)/
 	cp -r $(SERVER_DIR)/*.py $(PACKAGE_DIR)/
 
 package: clean prepare_www prepare_server
