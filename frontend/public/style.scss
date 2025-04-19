@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'ibm-plex';
+  src: url('./fonts/IBMPlexSerif-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  touch-action: manipulation;
+  margin: 2rem;
+
+  @media screen and (max-width: 750px) {
+    min-height: 100vh;
+    margin: 0;
+  }
+}
+
+hr {
+  border-color: lightgrey;
+}
+
+h1 {
+  color: #333;
+  margin-top: 0;
+  font-size: 4rem;
+  font-family: 'ibm-plex';
+  text-transform: uppercase;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3rem;
+  width: 100%;
+  display: grid;
+  place-items: center;
+
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    height: 1.5rem;
+  }
+}
