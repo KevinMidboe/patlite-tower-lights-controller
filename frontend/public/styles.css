@@ -1,9 +1,8 @@
 @font-face {
-  font-family: 'ibm-plex';
-  src: url('./fonts/IBMPlexSerif-SemiBoldItalic.ttf') format('truetype');
+  font-family: ibm-plex;
+  src: url('/fonts/IBMPlexSerif-SemiBoldItalic.woff2') format('woff2');
   font-weight: 500;
   font-style: italic;
-  font-display: swap;
 }
 
 body {
@@ -31,8 +30,10 @@ body {
   touch-action: manipulation;
   margin: 2rem;
   margin-bottom: 4rem;
+}
 
-  @media screen and (max-width: 750px) {
+@media screen and (max-width: 750px) {
+  .container {
     min-height: 100vh;
     margin: 0;
   }
@@ -46,11 +47,12 @@ h1 {
   color: #333;
   margin-top: 0;
   font-size: 4rem;
-  font-family: 'ibm-plex';
+  font-family: ibm-plex;
+  font-style: italic;
   text-transform: uppercase;
 }
 
-body > div#app > footer {
+main ~ footer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -58,10 +60,13 @@ body > div#app > footer {
   width: 100%;
   display: grid;
   place-items: center;
-
-  a {
-    display: inline-block;
-    vertical-align: middle;
-    height: 1.5rem;
-  }
 }
+
+main ~ footer a {
+  display: inline-block;
+  vertical-align: middle;
+  height: 1.6rem;
+  width: 1.5rem;
+}
+
+

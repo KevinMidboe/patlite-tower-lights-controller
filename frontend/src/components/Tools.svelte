@@ -150,10 +150,12 @@
       -webkit-user-select: none;
       user-select: none;
 
+      /*
       &::-webkit-details-marker,
       &::marker {
         display: none;
       }
+      */
 
       label,
       p {
@@ -173,6 +175,7 @@
           float: right;
           text-align: right;
           border-radius: 0.5rem;
+          border: none;
         }
       }
     }
