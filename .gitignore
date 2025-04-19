@@ -1,0 +1,6 @@
+.DS_Store
+
+frontend/nodes_modules
+frontend/dist
+
+server/lights.db
