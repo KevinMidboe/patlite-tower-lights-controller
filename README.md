@@ -1,14 +1,14 @@
 # PATLITE light tower controller
 
-## frontend
+## Frontend setup & run
 
-setup
+### setup
 
 ```
 cp .env.exmaple .env
 ```
 
-build
+### build
 
 ```
 cd frontend
@@ -19,7 +19,7 @@ yarn build
 build -t patlite-light-tower-controller .
 ```
 
-## server
+## Server setup & run
 
 ```
 cd server
@@ -33,3 +33,7 @@ or
 
 python3 --server main.py
 ```
+
+## Screenshot of homepage
+
+<img src="assets/screenshot.png" alt="screenshot of homepage" width="350px" />
